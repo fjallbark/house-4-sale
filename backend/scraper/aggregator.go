@@ -1,15 +1,15 @@
 package scraper
 
 import (
-    "house4sale/models"
-    "log"
+	"house4sale/models"
+	"log"
 )
 
 func Aggregate() ([]models.House, error) {
 
     log.Println("Calling Aggregate()")
 
-    hemnet, err := ScrapeHemnet()
+    fastighetsbyran, err := ScrapeFastighetsbyran()
     if err != nil {
         return nil, err
     }
@@ -19,7 +19,7 @@ func Aggregate() ([]models.House, error) {
     // boneo, _ := ScrapeBoneo()
 
     all := []models.House{}
-    all = append(all, hemnet...)
+    all = append(all, fastighetsbyran...)
     // all = append(all, booli...)
     // all = append(all, boneo...)
 

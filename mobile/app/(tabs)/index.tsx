@@ -1,5 +1,6 @@
 import { useEffect, useState } from "react";
 import { View, Text, FlatList, Image } from "react-native";
+import fastighetsbyranData from "../../assets/fastighetsbyran-data.json";
 
 type House = {
   title: string;
@@ -12,10 +13,13 @@ export default function Index() {
   const [houses, setHouses] = useState<House[]>([]);
 
   useEffect(() => {
-    fetch("http://localhost:8080/api/houses")
+    // Currently I want to test against test data so I leave this like this for now
+    /*fetch("http://localhost:8080/api/houses")
       .then((res) => res.json())
       .then(setHouses)
-      .catch(console.error);
+      .catch(console.error);*/
+
+    setHouses(fastighetsbyranData);
   }, []);
 
   return (
