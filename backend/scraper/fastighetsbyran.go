@@ -16,11 +16,12 @@ type fastAPIResponse struct {
 }
 
 type fastItem struct {
-    StorRubrik string   `json:"storRubrik"`
-    LitenRubrik string  `json:"litenRubrik"`
-    MetaData    []string `json:"metaData"`
-    BildUrl     string   `json:"bildUrl"`
-    Url         string   `json:"url"`
+    StorRubrik  string       `json:"storRubrik"`
+    LitenRubrik string       `json:"litenRubrik"`
+    MetaData    []string     `json:"metaData"`
+    BildUrl     string       `json:"bildUrl"`
+    Datum       string       `json:"senasteTidObjektetBlevTillSalu"`
+    Url         string       `json:"url"`
 }
 
 func ScrapeFastighetsbyran() ([]models.House, error) {
@@ -92,16 +93,23 @@ func ScrapeFastighetsbyran() ([]models.House, error) {
 
 for _, item := range data.Results {
     price := ""
+    squareMeters := ""
+    rooms := ""
     if len(item.MetaData) > 0 {
-        price = item.MetaData[0] // t.ex. "4 695 000 kr"
+        price = item.MetaData[0]
+        rooms = item.MetaData[1]
+        squareMeters = item.MetaData[2]
     }
 
     houses = append(houses, models.House{
         Title:   item.StorRubrik,
         Price:   price,
+        SquareMeters: squareMeters,
+        Rooms:   rooms,
+        Date:    item.Datum,
         Address: item.LitenRubrik,
         Image:   item.BildUrl,
-        Url:     item.Url, // redan full URL i API:et
+        Url:     item.Url,
         Source:  "Fastighetsbyrån",
     })
 }
