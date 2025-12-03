@@ -4,7 +4,7 @@ type House struct {
     Title           string `json:"title"`
     SquareMeters    string `json:"squareMeters"`
     Rooms           string `json:"rooms"`
-    Date            string `json:"Date"`
+    Date            string `json:"date"`
     Price           string `json:"price"`
     Address         string `json:"address"`
     Image           string `json:"image"`

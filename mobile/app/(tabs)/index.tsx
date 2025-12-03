@@ -1,5 +1,5 @@
 import { useEffect, useState } from "react";
-import { FlatList, Text } from "react-native";
+import { Text, SectionList } from "react-native";
 import fastighetsbyranData from "../../assets/fastighetsbyran-data.json";
 import { ListingCard } from "@/components/ui/ListingCard";
 
@@ -29,7 +29,10 @@ export default function Index() {
   const [houses, setHouses] = useState<House[]>([]);
 
   const todayItems = houses.filter((item) => isToday(item.date));
-  const otherItems = houses.filter((item) => !isToday(item.date));
+  const noDate = houses.filter((item) => item.date === "");
+  const otherItems = houses.filter(
+    (item) => item.date !== "" && !isToday(item.date)
+  );
 
   useEffect(() => {
     const sortByDate = (a: { date: string }, b: { date: string }) =>
@@ -45,21 +48,28 @@ export default function Index() {
 
   return (
     <>
-      <Text style={{ fontSize: 20, fontWeight: "bold", marginBottom: 8 }}>
-        Today
-      </Text>
-      <FlatList
-        data={todayItems}
-        keyExtractor={(_, index) => index.toString()}
+      <SectionList
+        sections={[
+          {
+            title: "Today",
+            data: todayItems,
+          },
+          {
+            title: "No Date",
+            data: noDate,
+          },
+          {
+            title: "Older",
+            data: otherItems,
+          },
+        ].filter((section) => section.data.length > 0)}
         renderItem={({ item }) => <ListingCard item={item} />}
-      />
-      <Text style={{ fontSize: 20, fontWeight: "bold", marginBottom: 8 }}>
-        Older
-      </Text>
-      <FlatList
-        data={otherItems}
-        keyExtractor={(_, index) => index.toString()}
-        renderItem={({ item }) => <ListingCard item={item} />}
+        renderSectionHeader={({ section }) => (
+          <Text style={{ fontSize: 20, fontWeight: "bold", marginBottom: 8 }}>
+            {section.title}
+          </Text>
+        )}
+        keyExtractor={(item) => `basicListEntry-${item}`}
       />
     </>
   );
