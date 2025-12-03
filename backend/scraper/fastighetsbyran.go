@@ -79,8 +79,6 @@ func ScrapeFastighetsbyran() ([]models.House, error) {
         return nil, err
     }
 
-    log.Println("RAW RESPONSE:", string(body))
-
     // ---- Parse API response ----
     var data fastAPIResponse
     if err := json.Unmarshal(body, &data); err != nil {
@@ -113,9 +111,6 @@ for _, item := range data.Results {
         Source:  "Fastighetsbyrån",
     })
 }
-
-
-    log.Println("houses", houses)
 
     return houses, nil
 }

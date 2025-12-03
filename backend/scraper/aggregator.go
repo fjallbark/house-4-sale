@@ -9,19 +9,15 @@ func Aggregate() ([]models.House, error) {
 
     log.Println("Calling Aggregate()")
 
-    fastighetsbyran, err := ScrapeFastighetsbyran()
+    fastighetsbyran, _ := ScrapeFastighetsbyran()
+    skandiamaklarna, err := ScrapeSkandiaMaklarna()
     if err != nil {
         return nil, err
     }
 
-    // Lägg till fler siter här:
-    // booli, _ := ScrapeBooli()
-    // boneo, _ := ScrapeBoneo()
-
     all := []models.House{}
     all = append(all, fastighetsbyran...)
-    // all = append(all, booli...)
-    // all = append(all, boneo...)
+    all = append(all, skandiamaklarna...)
 
     return all, nil
 }

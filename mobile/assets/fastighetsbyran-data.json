@@ -1,10 +1,10 @@
 [
     {
         "title": "Rosmarinvägen 12",
-        "price": "4 695 000 kr",
         "squareMeters": "144/17 kvm",
         "rooms": "5 rum",
-        "date": "2025-10-17T17:52:19.853",
+        "date": "2025-10-28T11:13:55.6",
+        "price": "4 695 000 kr",
         "address": "Väster",
         "image": "https://media.fastighetsbyran.se/47856835.jpg",
         "url": "https://www.fastighetsbyran.com/sv/sverige/till-salu/skane-lan/hoors-kommun/objekt/?objektID=3184387",
@@ -12,13 +12,46 @@
     },
     {
         "title": "Norra Nygatan 6B",
-        "price": "1 095 000 kr",
         "squareMeters": "108/0 kvm",
         "rooms": "4 rum",
-        "date": "2025-12-03T17:52:19.853",
+        "date": "2025-10-17T17:52:19.853",
+        "price": "1 095 000 kr",
         "address": "Höör",
         "image": "https://media.fastighetsbyran.se/47466261.jpg",
         "url": "https://www.fastighetsbyran.com/sv/sverige/till-salu/skane-lan/hoors-kommun/objekt/?objektID=3288377",
         "source": "Fastighetsbyrån"
+    },
+    {
+        "title": "Olof Nils väg 5",
+        "squareMeters": "90 + 90 kvm",
+        "rooms": "3 rum",
+        "date": "",
+        "price": "2 095 000 kr",
+        "address": "Olof Nils väg 5, Snogehall, Höör",
+        "image": "https://mp1.skm.quedro.com/eaimages/74/d3712-068bb-f90db-df303-ddeda-c03a4-57762-1b8b4/ae69c-1abc6-59ebb-afab6-3da82-9e905-3219d-a8892.jpg?width=",
+        "url": "https://www.skandiamaklarna.se/hitta-hem/villa/hoor/snogehall/118569461/",
+        "source": "SkandiaMäklarna"
+    },
+    {
+        "title": "Hedgatan 2",
+        "squareMeters": "103 + 59 kvm",
+        "rooms": "5 rum",
+        "date": "",
+        "price": "3 395 000 kr",
+        "address": "Hedgatan 2, Centralt, Höör",
+        "image": "https://mp1.skm.quedro.com/eaimages/74/daa07-166f1-35afb-8c952-152f6-441aa-604ec-f4efb/53e91-dd2b6-0109b-0bdba-9b75d-ec22f-1547d-f8a97.jpg?width=",
+        "url": "https://www.skandiamaklarna.se/hitta-hem/villa/hoor/centralt/119465545/",
+        "source": "SkandiaMäklarna"
+    },
+    {
+        "title": "Thornbergsgatan 4",
+        "squareMeters": "189 + 118 kvm",
+        "rooms": "5 rum",
+        "date": "",
+        "price": "",
+        "address": "Thornbergsgatan 4, Centralt, Höör",
+        "image": "https://mp1.skm.quedro.com/eaimages/74/bfa26-ad21e-ebdb9-2b216-e71b0-04d12-0a255-591b9/d51da-926be-d812d-25162-ae6c1-a03d0-74899-03ce7.jpg?width=",
+        "url": "https://www.skandiamaklarna.se/hitta-hem/villa/hoor/centralt/119314151/",
+        "source": "SkandiaMäklarna"
     }
 ]
