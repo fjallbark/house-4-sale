@@ -112,5 +112,6 @@ for _, item := range data.Results {
     })
 }
 
+    log.Println("houses fastighetsbyran", len(houses))
     return houses, nil
 }

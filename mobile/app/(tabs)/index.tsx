@@ -1,6 +1,6 @@
 import { useEffect, useState } from "react";
 import { Text, SectionList } from "react-native";
-import fastighetsbyranData from "../../assets/fastighetsbyran-data.json";
+import testData from "../../assets/test-data.json";
 import { ListingCard } from "@/components/ui/ListingCard";
 
 type House = {
@@ -43,7 +43,7 @@ export default function Index() {
       .then((data) => setHouses(data.sort(sortByDate)))
       .catch(console.error);*/
 
-    setHouses(fastighetsbyranData.sort(sortByDate));
+    setHouses(testData.sort(sortByDate));
   }, []);
 
   return (
