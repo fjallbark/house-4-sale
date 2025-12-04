@@ -58,7 +58,7 @@ func ScrapeSkandiaMaklarna() ([]models.House, error) {
 })
 
 
-    log.Println("houses skandiamaklarna", houses)
+    log.Println("houses skandiamaklarna", len(houses))
 
     return houses, nil
 }
