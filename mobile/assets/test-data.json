@@ -55,6 +55,17 @@
         "source": "SkandiaMäklarna"
     },
     {
+        "title": "Norra Fogdarödsvägen 15",
+        "squareMeters": "210",
+        "rooms": "7",
+        "date": "2025-07-23T16:44:24.8988352Z",
+        "price": "3995000",
+        "address": "Fogdarödsområdet",
+        "image": "https://cdn.lansfast-cdn.se/api/image/eyJpbWFnZVVybCI6Imh0dHBzOi8vc3RsYW5zZmFzdG1laWxpc2RldjAwMS5ibG9iLmNvcmUud2luZG93cy5uZXQvZm9yc2FsZWltYWdlcy9DTVZJTExBNUxRUE9TM082M0pFUEI3Ni9jYmlsZDVtcGlsYmxkcG1pbzA5NDAuanBlZyIsImVkaXRzIjp7InJlc2l6ZSI6eyJmaXQiOiJjb3ZlciIsImhlaWdodCI6NDAwLCJ3aWR0aCI6NjAwfSwianBlZyI6eyJtb3pqcGVnIjp0cnVlLCJxdWFsaXR5Ijo4MH19fQ==?signature=cd5dade8c0014f818f4ba0c4f04d40a865b7399e340560334939f982308aa4e3",
+        "url": "https://www.lansfast.se/till-salu/villa/skane/hoor/hoor/norra-fogdarodsvagen-15/cmvilla5lqpos3o63jepb76/",
+        "source": "Länsförsäkringar"
+    },
+    {
         "title": "Havrevägen 9",
         "squareMeters": "168",
         "rooms": "7",
@@ -88,17 +99,6 @@
         "source": "Länsförsäkringar"
     },
     {
-        "title": "Norra Fogdarödsvägen 15",
-        "squareMeters": "210",
-        "rooms": "7",
-        "date": "2025-07-23T16:44:24.8988352Z",
-        "price": "3995000",
-        "address": "Fogdarödsområdet",
-        "image": "https://cdn.lansfast-cdn.se/api/image/eyJpbWFnZVVybCI6Imh0dHBzOi8vc3RsYW5zZmFzdG1laWxpc2RldjAwMS5ibG9iLmNvcmUud2luZG93cy5uZXQvZm9yc2FsZWltYWdlcy9DTVZJTExBNUxRUE9TM082M0pFUEI3Ni9jYmlsZDVtcGlsYmxkcG1pbzA5NDAuanBlZyIsImVkaXRzIjp7InJlc2l6ZSI6eyJmaXQiOiJjb3ZlciIsImhlaWdodCI6NDAwLCJ3aWR0aCI6NjAwfSwianBlZyI6eyJtb3pqcGVnIjp0cnVlLCJxdWFsaXR5Ijo4MH19fQ==?signature=cd5dade8c0014f818f4ba0c4f04d40a865b7399e340560334939f982308aa4e3",
-        "url": "https://www.lansfast.se/till-salu/villa/skane/hoor/hoor/norra-fogdarodsvagen-15/cmvilla5lqpos3o63jepb76/",
-        "source": "Länsförsäkringar"
-    },
-    {
         "title": "Höstgatan 5",
         "squareMeters": "178",
         "rooms": "7",
@@ -108,5 +108,71 @@
         "image": "https://cdn.lansfast-cdn.se/api/image/eyJpbWFnZVVybCI6Imh0dHBzOi8vc3RsYW5zZmFzdG1laWxpc2RldjAwMS5ibG9iLmNvcmUud2luZG93cy5uZXQvZm9yc2FsZWltYWdlcy9DTVZJTExBNUtIMzBFVlJGVklJOExRSS9jYmlsZDVtazNiMGIwZ2Z0cDByc2cuanBnIiwiZWRpdHMiOnsicmVzaXplIjp7ImZpdCI6ImNvdmVyIiwiaGVpZ2h0Ijo0MDAsIndpZHRoIjo2MDB9LCJqcGVnIjp7Im1vempwZWciOnRydWUsInF1YWxpdHkiOjgwfX19?signature=2d88c35dcf3d2466d07cdf745bf37185482c3a17dd71bc2f5ead81863d096681",
         "url": "https://www.lansfast.se/till-salu/villa/skane/hoor/hoor/hostgatan-5/cmvilla5kh30evrfvii8lqi/",
         "source": "Länsförsäkringar"
+    },
+    {
+        "title": "Veterinärsområdet, Höör\n                    Krokgatan 81",
+        "squareMeters": "158+98 kvm",
+        "rooms": "6 rum",
+        "date": "",
+        "price": "2 450 000 kr",
+        "address": "Veterinärsområdet, Höör, Krokgatan 81",
+        "image": "https://www.bjurfors.se/cdn-cgi/image/format=auto,fit=crop,width=16,height=24,quality=50/contentassets/1dc1cda7240045c898f556b64dbc2142/cbild5mqrkbj2k5nck12i.jpg?v=1765106196",
+        "url": "https://www.bjurfors.se/sv/tillsalu/skane/hoor/veterinarsomradet/krokgatan-81/",
+        "source": "Bjurfors"
+    },
+    {
+        "title": "Åkersberg, Höör\n                    Tvärgatan 21",
+        "squareMeters": "115+60 kvm",
+        "rooms": "5 rum",
+        "date": "",
+        "price": "1 995 000 kr",
+        "address": "Åkersberg, Höör, Tvärgatan 21",
+        "image": "https://www.bjurfors.se/cdn-cgi/image/format=auto,fit=crop,width=16,height=24,quality=50/contentassets/9799632ec1eb409ea786542095983421/cbild5kl42gek3ag3buju.jpg?v=1762870938",
+        "url": "https://www.bjurfors.se/sv/tillsalu/skane/hoor/akersberg/tvargatan-21/",
+        "source": "Bjurfors"
+    },
+    {
+        "title": "Åkersberg, Höör\n                    Dammgatan 6",
+        "squareMeters": "220+120 kvm",
+        "rooms": "6 rum",
+        "date": "",
+        "price": "3 200 000 kr",
+        "address": "Åkersberg, Höör, Dammgatan 6",
+        "image": "https://www.bjurfors.se/cdn-cgi/image/format=auto,fit=crop,width=16,height=24,quality=50/contentassets/ace761d84b434809b025a1845f562f17/cbild5mi3qdfd8dc5oaku.jpg?v=1760108907",
+        "url": "https://www.bjurfors.se/sv/tillsalu/skane/hoor/akersberg/dammgatan-6/",
+        "source": "Bjurfors"
+    },
+    {
+        "title": "Sätofta, Höör\n                    Bryggarevägen 9A",
+        "squareMeters": "195+65 kvm",
+        "rooms": "8 rum",
+        "date": "",
+        "price": "3 995 000 kr",
+        "address": "Sätofta, Höör, Bryggarevägen 9A",
+        "image": "https://www.bjurfors.se/cdn-cgi/image/format=auto,fit=crop,width=16,height=24,quality=50/contentassets/02b58f702f37443cbdda756bf5a56015/cbild5mgro4fs56bnvpja.jpg?v=1759497728",
+        "url": "https://www.bjurfors.se/sv/tillsalu/skane/hoor/satofta/bryggarevagen-9a/",
+        "source": "Bjurfors"
+    },
+    {
+        "title": "Veterinärsområdet, Höör\n                    Hörbyvägen 31",
+        "squareMeters": "99+9 kvm",
+        "rooms": "6 rum",
+        "date": "",
+        "price": "",
+        "address": "Veterinärsområdet, Höör, Hörbyvägen 31",
+        "image": "https://www.bjurfors.se/cdn-cgi/image/format=auto,fit=crop,width=16,height=24,quality=50/contentassets/7f6a6239c05b40c8bce1ff5dfe5137d9/cbild5m7b44uflbevcbc5.jpg?v=1757081464",
+        "url": "https://www.bjurfors.se/sv/tillsalu/skane/hoor/veterinarsomradet/horbyvagen-31/",
+        "source": "Bjurfors"
+    },
+    {
+        "title": "Höör - Centralt, Höör\n                    Kaptensgatan 8",
+        "squareMeters": "150 kvm",
+        "rooms": "5 rum",
+        "date": "",
+        "price": "3 295 000 kr",
+        "address": "Höör - Centralt, Höör, Kaptensgatan 8",
+        "image": "https://www.bjurfors.se/cdn-cgi/image/format=auto,fit=crop,width=16,height=24,quality=50/contentassets/8b1c048977ff4696bd108de51ad85460/cbild5lkk4eincnk2govm.jpg?v=1750320726",
+        "url": "https://www.bjurfors.se/sv/tillsalu/skane/hoor/hoor-centralt/kaptensgatan-8/",
+        "source": "Bjurfors"
     }
 ]
