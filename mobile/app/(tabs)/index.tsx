@@ -38,12 +38,12 @@ export default function Index() {
     const sortByDate = (a: { date: string }, b: { date: string }) =>
       new Date(a.date).getTime() - new Date(b.date).getTime();
     // Currently I want to test against test data so I leave this like this for now
-    /*fetch("http://localhost:8080/api/houses")
+    fetch("http://localhost:8080/api/houses")
       .then((res) => res.json())
       .then((data) => setHouses(data.sort(sortByDate)))
-      .catch(console.error);*/
+      .catch(console.error);
 
-    setHouses(testData.sort(sortByDate));
+    //setHouses(testData.sort(sortByDate));
   }, []);
 
   return (
