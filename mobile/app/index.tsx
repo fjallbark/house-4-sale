@@ -1,6 +1,6 @@
 import { useEffect, useState } from "react";
 import { Text, SectionList } from "react-native";
-import testData from "../../assets/test-data.json";
+import testData from "../assets/test-data.json";
 import { ListingCard } from "@/components/ui/ListingCard";
 
 type House = {
@@ -37,13 +37,13 @@ export default function Index() {
   useEffect(() => {
     const sortByDate = (a: { date: string }, b: { date: string }) =>
       new Date(a.date).getTime() - new Date(b.date).getTime();
-    // Currently I want to test against test data so I leave this like this for now
-    fetch("http://localhost:8080/api/houses")
+    fetch("https://house-4-sale-586154610218.europe-north2.run.app/api/houses")
       .then((res) => res.json())
       .then((data) => setHouses(data.sort(sortByDate)))
       .catch(console.error);
-
-    //setHouses(testData.sort(sortByDate));
+    /*Leaving this for test purpose
+    fetch("http://localhost:8080/api/houses")
+    setHouses(testData.sort(sortByDate));*/
   }, []);
 
   return (
@@ -69,7 +69,7 @@ export default function Index() {
             {section.title}
           </Text>
         )}
-        keyExtractor={(item) => `basicListEntry-${item}`}
+        keyExtractor={(item) => `basicListEntry-${item.url}`}
       />
     </>
   );
