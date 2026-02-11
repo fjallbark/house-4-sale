@@ -30,20 +30,27 @@ export default function Index() {
 
   const todayItems = houses.filter((item) => isToday(item.date));
   const noDate = houses.filter((item) => item.date === "");
+  const [refreshing, setRefreshing] = useState(false);
   const otherItems = houses.filter(
     (item) => item.date !== "" && !isToday(item.date)
   );
 
-  useEffect(() => {
+  const fetchData = () => {
     const sortByDate = (a: { date: string }, b: { date: string }) =>
       new Date(a.date).getTime() - new Date(b.date).getTime();
+    setRefreshing(true);
     fetch("https://house-4-sale-586154610218.europe-north2.run.app/api/houses")
       .then((res) => res.json())
       .then((data) => setHouses(data.sort(sortByDate)))
-      .catch(console.error);
+      .catch(console.error)
+      .finally(() => setRefreshing(false));
     /*Leaving this for test purpose
     fetch("http://localhost:8080/api/houses")
     setHouses(testData.sort(sortByDate));*/
+  };
+
+  useEffect(() => {
+    fetchData();
   }, []);
 
   return (
@@ -70,6 +77,8 @@ export default function Index() {
           </Text>
         )}
         keyExtractor={(item) => `basicListEntry-${item.url}`}
+        refreshing={refreshing}
+        onRefresh={fetchData}
       />
     </>
   );
